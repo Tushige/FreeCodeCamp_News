@@ -1,0 +1,81 @@
+/*GENERAL*/
+* {
+  margin:0;
+  padding:0;
+  border:0;
+}
+body {
+  background-color:#4296eb;
+}
+/*WebPage Title*/
+#title {
+  color:white;
+  text-align:center;
+  font:Bold 50px Lobster, Monospace;
+}
+/*Big Container for all of the elements*/
+.entries {
+  width:100%;
+}
+/*Container for individual element*/
+.entries .entry {
+  background-color:rgba(255,255,255,0.7);
+  border-radius:10px;
+  text-align:center;
+  height:auto;
+  margin:5px;
+}
+/*Individual entry Image*/
+.entry img{
+  display:inline-block;
+  width:100%;
+  height:auto;
+  border-radius:20px;
+  padding:5px  5px 0 5px;
+  cursor:pointer;
+}
+/*entry Title*/
+.entries .entry .entry_description{
+  font:Normal 15px Bitter, Monospace;
+  color:#1d4872;
+  width:100%;
+  /*needed for text-overflow to work with inline elements*/
+  display:inline-block;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+  cursor:pointer;
+  margin:0;
+  padding:0;
+}
+/*entry username*/
+.entries .entry .user {
+  font:Normal 15px Bitter, Monospace;
+  color:#3476b7;
+  text-align:left;
+  width:100%;
+  display:inline-block;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+  cursor:pointer;
+  margin:0;
+  padding:0;
+}
+/*text displaying number of upVotes*/
+.rank {
+  font:Bold 12px Bitter, Monospace;
+  text-align:left;
+  margin:0;
+  margin-left:5px;
+  padding:0;
+}
+/*text displaying date the entry was posted*/
+.date {
+  font:Bold 15px Bitter, Monospace;
+  color:#2c3281;
+  text-align:center;
+  margin:0;
+  margin-top:5px;
+  padding:0;
+}
